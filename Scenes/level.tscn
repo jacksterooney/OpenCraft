@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://b56x55hi77k2e"]
+
+[ext_resource type="PackedScene" uid="uid://ck5lu2qxwbjsx" path="res://Scenes/chunk.tscn" id="2_rvbwy"]
+
+[node name="Level" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.103058, 3.8147e-06, -0.0405388)
+
+[node name="Chunk" parent="." instance=ExtResource("2_rvbwy")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.707107, -0.353553, 0.612372, -3.78739e-09, 0.866025, 0.5, -0.707107, -0.353553, 0.612373, 39.1589, 45.9936, 39.3275)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.665743, -0.482999, 0.56877, 0.0358102, 0.782043, 0.622195, -0.745322, -0.393854, 0.537936, 0, 0, 0)
+
+[node name="Chunk2" parent="." instance=ExtResource("2_rvbwy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0)
+
+[node name="Chunk3" parent="." instance=ExtResource("2_rvbwy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0167, 0, -16.06)
+
+[node name="Chunk4" parent="." instance=ExtResource("2_rvbwy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)

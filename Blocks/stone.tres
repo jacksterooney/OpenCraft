@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Block" load_steps=3 format=3 uid="uid://cocwhtnmdmxt4"]
+
+[ext_resource type="Script" path="res://Scripts/block.gd" id="1_eodyh"]
+[ext_resource type="Texture2D" uid="uid://cdfqhht2r4yks" path="res://Textures/Block/stone.png" id="2_jx538"]
+
+[resource]
+script = ExtResource("1_eodyh")
+texture = ExtResource("2_jx538")

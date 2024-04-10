@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck5lu2qxwbjsx"]
+
+[ext_resource type="Script" path="res://Scenes/chunk.gd" id="1_c7ht7"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_gsrxv"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3n21m"]
+
+[node name="Chunk" type="StaticBody3D" node_paths=PackedStringArray("collision_shape", "mesh_instance")]
+script = ExtResource("1_c7ht7")
+collision_shape = NodePath("CollisionShape3D")
+mesh_instance = NodePath("MeshInstance3D")
+noise = SubResource("FastNoiseLite_gsrxv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_3n21m")
